@@ -1,4 +1,10 @@
-
+# use gawk for faster rpocessing if on a low end system
+# if you do not have pulseaudio exchange
+# | aplay -r 64000
+# with
+# > /dev/dsp
+# to play the pcm
+# change rate=32000
 function awk-music () {
     awk 'function wl() {
             rate=32000;
